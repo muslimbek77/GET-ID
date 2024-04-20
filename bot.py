@@ -103,7 +103,7 @@ async def is_admin(message:Message):
     await message.answer(text="Admin menu",reply_markup=admin_keyboard.admin_button)
 
 
-@dp.message(F.text=="👥 👥 Number of users",IsBotAdminFilter(ADMINS))
+@dp.message(F.text=="👥 Number of users",IsBotAdminFilter(ADMINS))
 async def users_count(message:Message):
     counts = db.count_users()
     text = f"Our bot has {counts[0]} users "

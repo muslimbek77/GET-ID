@@ -4,11 +4,11 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 admin_button = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text="Foydalanuvchilar soni"),
-            KeyboardButton(text="Reklama yuborish"),
+            KeyboardButton(text="👥 Number of users"),
+            KeyboardButton(text="🛫 Submit an ad"),
         ]
         
     ],
    resize_keyboard=True,
-   input_field_placeholder="Menudan birini tanlang"
+   input_field_placeholder="Choose one from the menu"
 )

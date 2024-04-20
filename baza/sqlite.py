@@ -74,10 +74,3 @@ class Database:
     def all_users_id(self):
         return self.execute("SELECT telegram_id FROM Users;", fetchall=True)
 
-def logger(statement):
-    print(f"""
-_____________________________________________________        
-Executing: 
-{statement}
-_____________________________________________________
-""")

@@ -68,9 +68,7 @@ async def kanalga_obuna(message:Message):
     
 @dp.message(F.user_shared)
 async def get_user_id(message: Message):
-    print(message)
     id = message.user_shared.user_id
-    print(id)
     text = "🏷 ID: <code>{id}</code>".format(id=id)
     await message.answer(text,reply_markup=get_id)
 
